@@ -1,3 +1,3 @@
 # amandapinsker.github.io
 
-Info Design 2
+Information Design 2
