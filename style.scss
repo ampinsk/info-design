@@ -1,0 +1,88 @@
+---
+
+---
+
+// Variables
+$color-red: #cc0033;
+$karla: 		"Karla", sans-serif;
+$sans:			$karla;
+
+// Mixins
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// SVG Homework
+
+.box {
+	fill: $color-red;
+}
+
+.circle {
+	fill: rgba(0,0,180,.4)
+}
+
+.ref-image {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+
+
+
+
+// Styles
+
+body {
+	font-family: $karla;
+}
+
+.container {
+	padding: 5% 20%;
+	max-width: 750px;
+}
+
+.nav-bar {
+	padding: 10px;
+}
+
+.nav {
+	text-decoration: none;
+	color: black;
+	transition: 0.2s ease;
+	font-size: 14px;
+
+	&:hover {
+		color: $color-red;
+	}
+}
+
+span {
+	color: $color-red;
+}
+
+
+h1 {
+	font-size: 72px; 
+}
+
+p {
+	line-height: 1.3;
+}
+
+a {
+		text-decoration: none;
+		font-weight: 700;
+
+		&:visited {
+			color: black;
+		}
+
+		&:hover {
+			color: $color-red;
+		}
+	}
