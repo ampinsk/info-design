@@ -49,7 +49,12 @@ body {
 
 .container {
 	padding: 5% 20%;
-	max-width: 750px;
+	max-width: 700px;
+}
+
+
+.divider {
+	border-bottom: 1px solid #CCC;
 }
 
 .nav-bar {
@@ -92,3 +97,7 @@ a {
 			color: $color-red;
 		}
 	}
+
+.homework-list {
+	font-weight: 300;
+}
