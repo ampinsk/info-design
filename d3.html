@@ -1,0 +1,27 @@
+---
+layout: base
+title: D3 Demo
+---
+
+
+<script>
+
+	var data = [23, 54, 34];
+
+	var svg = d3.select("body").append("svg")
+		.attr("width", 400)
+		.attr("width", 400);
+
+	var circles = svg.selectAll("circle")
+		.data(data);
+
+	circles.enter().append("circle")
+		.attr("cx", function(d, i) {
+			return 60 + (120 * i);
+		})
+		.attr("cy", 60)
+		.attr("r", function(d) {
+			return d;
+		});
+
+</script>
