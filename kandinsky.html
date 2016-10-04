@@ -7,8 +7,13 @@ layout: base
 <section class="container">
 	<h3>Kandinsky</h3>
 </section>
+<button id="btn-shrink">Shrink</button>
+<button id="btn-rotate">Rotate</button>
 <svg width="1270px" height="1000px">
 	<!-- <rect class="box" x="0px" y="100px" width="150px" height="150px" /> -->
+
+	
+
 
 	<circle cx="370px" cy="302px" r="80px" fill="black" />
 	<circle cx="370px" cy="302px" r="70px" fill="white" stroke="red" stroke-width="7"/>
@@ -83,5 +88,22 @@ layout: base
 		polygon
 		path
 	 -->
+
+	 <script>
+
+	 var shrink = d3.select('#btn-shrink');
+	 var rotate = d3.select('#btn-rotate');
+
+
+	 shrink.on('click', function() {
+	 	d3.selectAll('svg').style("transform", "scale(.5)")
+	 }); 
+
+	 rotate.on('click', function() {
+	 	d3.selectAll('svg').style("transform", "rotate(20deg)")
+	 }); 
+
+
+	 </script>
 </svg>
-<img class="ref-image" src="kandinsky.jpg"/>
+<!-- <img class="ref-image" src="kandinsky.jpg"/> -->
